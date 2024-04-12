@@ -21,5 +21,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('pybo/', views.index),
+    path('', include('pybo.urls')),
     path('pybo/', include('pybo.urls')), #include를 통해 pybo url을 사용한다는 것 이에 pybo 폴더 내에 urls.py파일을 생성해야 함
 ]
