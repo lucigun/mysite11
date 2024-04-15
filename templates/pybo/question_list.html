@@ -2,7 +2,6 @@
 <ul>
     {% for question in question_list %}
 {# url 별칭주기전  <li><a href="/pybo/{{ question.id }}/">{{ question.subject }}</a></li> #}
-        console.log(a);
         <li><a href="{% url 'pybo:detail' question.id %}">{{ question.subject }}</a></li>
     {% endfor %}
 </ul>
